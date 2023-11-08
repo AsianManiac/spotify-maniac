@@ -1,0 +1,104 @@
+import { createSlice } from "@reduxjs/toolkit";
+
+const initialState = {
+  currentSongs: [],
+  currentIndex: 0,
+  isActive: false,
+  isPlaying: false,
+  activeSong: {},
+  genreListId: "",
+};
+
+const playerSlice = createSlice({
+  name: "player",
+  initialState,
+  reducers: {
+    setActiveSong: (
+      state: {
+        activeSong: any;
+        currentSongs: any;
+        currentIndex: any;
+        isActive: boolean;
+      },
+      action: {
+        payload: {
+          song: any;
+          data: { tracks: { hits: any }; properties: any };
+          i: any;
+        };
+      }
+    ) => {
+      state.activeSong = action.payload.song;
+
+      if (action.payload?.data?.tracks?.hits) {
+        state.currentSongs = action.payload.data.tracks.hits;
+      } else if (action.payload?.data?.properties) {
+        state.currentSongs = action.payload?.data?.tracks;
+      } else {
+        state.currentSongs = action.payload.data;
+      }
+
+      state.currentIndex = action.payload.i;
+      state.isActive = true;
+    },
+
+    nextSong: (
+      state: {
+        currentSongs: { [x: string]: any };
+        activeSong: any;
+        currentIndex: any;
+        isActive: boolean;
+      },
+      action: { payload: string | number }
+    ) => {
+      if (state.currentSongs[action.payload]?.track) {
+        state.activeSong = state.currentSongs[action.payload]?.track;
+      } else {
+        state.activeSong = state.currentSongs[action.payload];
+      }
+
+      state.currentIndex = action.payload;
+      state.isActive = true;
+    },
+
+    prevSong: (
+      state: {
+        currentSongs: { [x: string]: any };
+        activeSong: any;
+        currentIndex: any;
+        isActive: boolean;
+      },
+      action: { payload: string | number }
+    ) => {
+      if (state.currentSongs[action.payload]?.track) {
+        state.activeSong = state.currentSongs[action.payload]?.track;
+      } else {
+        state.activeSong = state.currentSongs[action.payload];
+      }
+
+      state.currentIndex = action.payload;
+      state.isActive = true;
+    },
+
+    playPause: (state: { isPlaying: any }, action: { payload: any }) => {
+      state.isPlaying = action.payload;
+    },
+
+    selectGenreListId: (
+      state: { genreListId: any },
+      action: { payload: any }
+    ) => {
+      state.genreListId = action.payload;
+    },
+  },
+});
+
+export const {
+  setActiveSong,
+  nextSong,
+  prevSong,
+  playPause,
+  selectGenreListId,
+} = playerSlice.actions;
+
+export default playerSlice.reducer;
