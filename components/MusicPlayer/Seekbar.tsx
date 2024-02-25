@@ -2,7 +2,7 @@ import React from "react";
 
 interface SeekbarProps {
   value: number;
-  min: string;
+  min: number;
   max: number;
   onInput: any;
   setSeekTime: any;
@@ -38,7 +38,7 @@ const Seekbar = ({
         min={min}
         max={max}
         onInput={onInput}
-        className="md:block w-24 md:w-56 2xl:w-96 h-1 mx-4 2xl:mx-6 rounded-lg"
+        className="md:block w-24 md:w-56 bg-white 2xl:w-96 h-1 mx-4 2xl:mx-6 rounded-lg"
       />
       <p className="text-white">{max === 0 ? "0:00" : getTime(max)}</p>
       <button

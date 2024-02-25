@@ -6,7 +6,7 @@ interface BoxProps {
 }
 const Box = ({ children, className }: BoxProps) => {
   return (
-    <div className={cn("bg-neutral-700 rounded-lg h-fit w-full", className)}>
+    <div className={cn("bg-neutral-900 rounded-lg h-fit w-full", className)}>
       {children}
     </div>
   );

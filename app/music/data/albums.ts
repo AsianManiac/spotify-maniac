@@ -1,85 +1,287 @@
 export interface Album {
-  id?: string;
+  id: string;
   name: string;
   artist: string;
+  songUrl: string;
+  genre: string;
   cover: string;
 }
 
 export const listenNowAlbums: Album[] = [
   {
+    id: "24b3bb0f-fc31-5e25-99a3-29e537d5f42d",
     name: "React Rendezvous",
     artist: "Ethan Byte",
-    cover:
-      "https://images.unsplash.com/photo-1611348586804-61bf6c080437?w=300&dpr=2&q=80",
+    songUrl: "/songs/a-call-to-the-soul-149262.mp3",
+    genre: "Pop",
+    cover: "FB_IMG_1661535095374.jpg",
   },
   {
+    id: "7fa3ee08-583f-5acc-9324-016c3e788cfe",
     name: "Async Awakenings",
     artist: "Nina Netcode",
-    cover:
-      "https://images.unsplash.com/photo-1468817814611-b7edf94b5d60?w=300&dpr=2&q=80",
+    songUrl:
+      "/songs/Ain t No Grave (Official) - Bethel Music & Molly Skaggs VICTORY.mp3",
+    genre: "Pop",
+    cover: "FB_IMG_1661535097699.jpg",
   },
   {
+    id: "2ca0aabc-2e75-5011-a5cf-6071c1ef9a1b",
     name: "The Art of Reusability",
     artist: "Lena Logic",
-    cover:
-      "https://images.unsplash.com/photo-1528143358888-6d3c7f67bd5d?w=300&dpr=2&q=80",
+    songUrl: "/songs/Any Man of Mine.mp3",
+    genre: "Hip-Hop",
+    cover: "FB_IMG_1661535099974.jpg",
   },
   {
+    id: "d46dc2c6-45e0-5eb5-90d8-c510f1feb114",
     name: "Stateful Symphony",
     artist: "Beth Binary",
-    cover:
-      "https://images.unsplash.com/photo-1490300472339-79e4adc6be4a?w=300&dpr=2&q=80",
+    songUrl: "/songs/Ayo Davies - God Of Abundance.mp3",
+    genre: "Dance",
+    cover: "FB_IMG_1661535103103.jpg",
+  },
+  {
+    id: "fc31ff5c-5ea6-56b9-aca8-b350c3f86b27",
+    name: "The Art of Reusability",
+    artist: "Lena Logic",
+    songUrl: "/songs/Any Man of Mine.mp3",
+    genre: "Dance",
+    cover: "FB_IMG_1661535099974.jpg",
+  },
+  {
+    id: "95581e8e-6f45-53e5-946d-a80ffd315124",
+    name: "Stateful Symphony",
+    artist: "Beth Binary",
+    songUrl: "/songs/Ayo Davies - God Of Abundance.mp3",
+    genre: "K-Pop",
+    cover: "FB_IMG_1661535103103.jpg",
   },
 ];
 
-export const madeForYouAlbums: Album[] = [
+export const ExploreSongs: Album[] = [
   {
-    id: "TASK-8782",
-    name: "Thinking Components",
-    artist: "Lena Logic",
-    cover:
-      "https://images.unsplash.com/photo-1615247001958-f4bc92fa6a4a?w=300&dpr=2&q=80",
-  },
-  {
-    id: "TASK-7878",
-    name: "Functional Fury",
-    artist: "Beth Binary",
-    cover:
-      "https://images.unsplash.com/photo-1513745405825-efaf9a49315f?w=300&dpr=2&q=80",
-  },
-  {
-    id: "TASK-7839",
+    id: "a80e1475-9ba9-5e11-ac3c-cb7a0b37c62c",
     name: "React Rendezvous",
     artist: "Ethan Byte",
-    cover:
-      "https://images.unsplash.com/photo-1614113489855-66422ad300a4?w=300&dpr=2&q=80",
+    songUrl: "/songs/a-call-to-the-soul-149262.mp3",
+    genre: "Country",
+    cover: "FB_IMG_1661535095374.jpg",
   },
   {
-    id: "TASK-5562",
-    name: "Stateful Symphony",
-    artist: "Beth Binary",
-    cover:
-      "https://images.unsplash.com/photo-1446185250204-f94591f7d702?w=300&dpr=2&q=80",
-  },
-  {
-    id: "TASK-8686",
+    id: "316b0251-e4df-5c09-b6fd-2e68be4403a9",
     name: "Async Awakenings",
     artist: "Nina Netcode",
-    cover:
-      "https://images.unsplash.com/photo-1468817814611-b7edf94b5d60?w=300&dpr=2&q=80",
+    songUrl:
+      "/songs/Ain t No Grave (Official) - Bethel Music & Molly Skaggs VICTORY.mp3",
+    genre: "K-Pop",
+    cover: "FB_IMG_1661535097699.jpg",
   },
   {
-    id: "TASK-1280",
+    id: "7160b82d-ec27-5fe6-89f4-0fced7a57918",
     name: "The Art of Reusability",
     artist: "Lena Logic",
-    cover:
-      "https://images.unsplash.com/photo-1490300472339-79e4adc6be4a?w=300&dpr=2&q=80",
+    songUrl: "/songs/Any Man of Mine.mp3",
+    genre: "K-Pop",
+    cover: "FB_IMG_1661535099974.jpg",
   },
   {
-    id: "TASK-7262",
+    id: "b683c06e-2d13-56f6-83f4-7e1ddad92155",
+    name: "Stateful Symphony",
+    artist: "Beth Binary",
+    songUrl: "/songs/Ayo Davies - God Of Abundance.mp3",
+    genre: "Dance",
+    cover: "FB_IMG_1661535103103.jpg",
+  },
+  {
+    id: "079d55e3-ea10-5425-8a6e-ca6b7afb3c61",
     name: "The Art of Reusability",
     artist: "Lena Logic",
-    cover:
-      "https://images.unsplash.com/photo-1490300472339-79e4adc6be4a?w=300&dpr=2&q=80",
+    songUrl: "/songs/Any Man of Mine.mp3",
+    genre: "Electronic",
+    cover: "FB_IMG_1661535099974.jpg",
+  },
+  {
+    id: "69e8c354-29d4-5d6f-9514-4eef266822c6",
+    name: "Stateful Symphony",
+    artist: "Beth Binary",
+    songUrl: "/songs/Ayo Davies - God Of Abundance.mp3",
+    genre: "Hip-Hop",
+    cover: "FB_IMG_1661535103103.jpg",
+  },
+  {
+    id: "0a7895a0-0cd6-5999-8547-301ee9bc6a4b",
+    name: "Thinking Components",
+    artist: "Lena Logic",
+    songUrl: "/songs/Born_to_MISrepresent_EP7p1.mp3",
+    genre: "House",
+    cover: "FB_IMG_1661535106591.jpg",
+  },
+  {
+    id: "b186fd7e-a0cc-5e48-997b-0a5bf95be0a3",
+    name: "Functional Fury",
+    artist: "Beth Binary",
+    songUrl: "/songs/Build Your Church Elevation Worship & Maverick City.mp3",
+    genre: "Dance",
+    cover: "FB_IMG_1661535108806.jpg",
+  },
+  {
+    id: "4afb6631-4eb2-5157-ac2a-a500dfc7e631",
+    name: "React Rendezvous",
+    artist: "Ethan Byte",
+    songUrl:
+      "/songs/Casting Crowns - Nobody (Official Music Video) ft. Matthew West_160k.mp3",
+    genre: "Dance",
+    cover: "FB_IMG_1661535110896.jpg",
+  },
+  {
+    id: "d0d1b5b2-1563-5fd7-8851-9dfbea1b181e",
+    name: "Stateful Symphony",
+    artist: "Beth Binary",
+    songUrl:
+      "/songs/King of My Heart - Steffany Gretzinger & Jeremy Riddle Moment.mp3",
+    genre: "Raggea",
+    cover: "FB_IMG_1661535113040.jpg",
+  },
+  {
+    id: "70df3431-a9aa-5d74-b298-fb1ff2952a30",
+    name: "Async Awakenings",
+    artist: "Nina Netcode",
+    songUrl: "/songs/O-Wa-Ye-Funmi-Loke-Adeyinka-Alaseyori.mp3",
+    genre: "Rock",
+    cover: "FB_IMG_1661535115371.jpg",
+  },
+  {
+    id: "98102b5c-3e61-54e1-a704-2b0bc45cbe72",
+    name: "The Art of Reusability",
+    artist: "Lena Logic",
+    songUrl: "/songs/Sonnie_Badu_-_Let_It_Rain_CeeNaija.com_.mp3",
+    genre: "Pop",
+    cover: "FB_IMG_1661535117363.jpg",
+  },
+  {
+    id: "c8d102e9-42df-5464-8b46-7598891ca11e",
+    name: "The Art of Reusability",
+    artist: "Lena Logic",
+    songUrl: "/songs/Tani-Mi-Gan-Gan-Who-Am-I-Temitope-Praise.mp3",
+    genre: "Pop",
+    cover: "FB_IMG_1661535119256.jpg",
+  },
+];
+export const madeForYouAlbums: Album[] = [
+  {
+    id: "596d4938-90fe-599f-ad88-6ab646433f94",
+    name: "Thinking Components",
+    artist: "Lena Logic",
+    songUrl: "/songs/Born_to_MISrepresent_EP7p1.mp3",
+    genre: "Soul",
+    cover: "FB_IMG_1661535106591.jpg",
+  },
+  {
+    id: "596d498-90fe-599f-ad88-6ab646433f94",
+    name: "Thinking Components",
+    artist: "Lena Logic",
+    songUrl: "/songs/Born_to_MISrepresent_EP7p1.mp3",
+    genre: "Soul",
+    cover: "FB_IMG_1661535106591.jpg",
+  },
+  {
+    id: "71840b82-9cbf-5b54-9769-f31cc4646ed9",
+    name: "Functional Fury",
+    artist: "Beth Binary",
+    songUrl: "/songs/Build Your Church Elevation Worship & Maverick City.mp3",
+    genre: "House",
+    cover: "FB_IMG_1661535108806.jpg",
+  },
+  {
+    id: "07ea8d88-84d6-58ac-99f9-a632b38744a4",
+    name: "React Rendezvous",
+    artist: "Ethan Byte",
+    songUrl:
+      "/songs/Casting Crowns - Nobody (Official Music Video) ft. Matthew West_160k.mp3",
+    genre: "Worldwide",
+    cover: "FB_IMG_1661535110896.jpg",
+  },
+  {
+    id: "4d60602b-bb03-530c-956d-2e09d0ee2395",
+    name: "Stateful Symphony",
+    artist: "Beth Binary",
+    songUrl:
+      "/songs/King of My Heart - Steffany Gretzinger & Jeremy Riddle Moment.mp3",
+    genre: "K-Pop",
+    cover: "FB_IMG_1661535113040.jpg",
+  },
+  {
+    id: "b958af85-9a8d-51a4-857c-fde99163e6a6",
+    name: "Async Awakenings",
+    artist: "Nina Netcode",
+    songUrl: "/songs/O-Wa-Ye-Funmi-Loke-Adeyinka-Alaseyori.mp3",
+    genre: "K-Pop",
+    cover: "FB_IMG_1661535115371.jpg",
+  },
+  {
+    id: "fdd5cec8-e590-57ef-acc2-64a766072970",
+    name: "The Art of Reusability",
+    artist: "Lena Logic",
+    songUrl: "/songs/Sonnie_Badu_-_Let_It_Rain_CeeNaija.com_.mp3",
+    genre: "Soul",
+    cover: "FB_IMG_1661535117363.jpg",
+  },
+  {
+    id: "8f3debd2-4d75-5604-81b0-3a70e3389cf2",
+    name: "The Art of Reusability",
+    artist: "Lena Logic",
+    songUrl: "/songs/Tani-Mi-Gan-Gan-Who-Am-I-Temitope-Praise.mp3",
+    genre: "Soul",
+    cover: "FB_IMG_1661535119256.jpg",
+  },
+  {
+    id: "24b3bb0f-fc31-5e25-99a3-29e537d5f42d",
+    name: "React Rendezvous",
+    artist: "Ethan Byte",
+    songUrl: "/songs/a-call-to-the-soul-149262.mp3",
+    genre: "Pop",
+    cover: "FB_IMG_1661535095374.jpg",
+  },
+  {
+    id: "7fa3ee08-583f-5acc-9324-016c3e788cfe",
+    name: "Async Awakenings",
+    artist: "Nina Netcode",
+    songUrl:
+      "/songs/Ain t No Grave (Official) - Bethel Music & Molly Skaggs VICTORY.mp3",
+    genre: "Pop",
+    cover: "FB_IMG_1661535097699.jpg",
+  },
+  {
+    id: "2ca0aabc-2e75-5011-a5cf-6071c1ef9a1b",
+    name: "The Art of Reusability",
+    artist: "Lena Logic",
+    songUrl: "/songs/Any Man of Mine.mp3",
+    genre: "Hip-Hop",
+    cover: "FB_IMG_1661535099974.jpg",
+  },
+  {
+    id: "d46dc2c6-45e0-5eb5-90d8-c510f1feb114",
+    name: "Stateful Symphony",
+    artist: "Beth Binary",
+    songUrl: "/songs/Ayo Davies - God Of Abundance.mp3",
+    genre: "Dance",
+    cover: "FB_IMG_1661535103103.jpg",
+  },
+  {
+    id: "fc31ff5c-5ea6-56b9-aca8-b350c3f86b27",
+    name: "The Art of Reusability",
+    artist: "Lena Logic",
+    songUrl: "/songs/Any Man of Mine.mp3",
+    genre: "Dance",
+    cover: "FB_IMG_1661535099974.jpg",
+  },
+  {
+    id: "95581e8e-6f45-53e5-946d-a80ffd315124",
+    name: "Stateful Symphony",
+    artist: "Beth Binary",
+    songUrl: "/songs/Ayo Davies - God Of Abundance.mp3",
+    genre: "K-Pop",
+    cover: "FB_IMG_1661535103103.jpg",
   },
 ];

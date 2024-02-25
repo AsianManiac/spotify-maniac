@@ -1,4 +1,4 @@
-import { Providers } from "@/redux/provider";
+import ThemeProvider from "@/components/providers/theme-provider";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
@@ -18,7 +18,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-        <Providers>{children}</Providers>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          forcedTheme="dark"
+          enableSystem={false}
+          storageKey="discord-theme"
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

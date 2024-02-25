@@ -81,7 +81,7 @@ const MusicPlayer = () => {
         />
         <Seekbar
           value={appTime}
-          min="0"
+          min={0}
           max={duration}
           onInput={(event: any) => setSeekTime(event.target.value)}
           setSeekTime={setSeekTime}

@@ -1,9 +1,18 @@
-import Image from "next/image";
+import { madeForYouAlbums } from "../music/data/albums";
+import Content from "./_components/Content";
 
-export default function Home() {
+export const revalidate = 0;
+
+export default async function Home() {
+  const songs = await madeForYouAlbums;
   return (
-    <main className="flex min-h-screen">
-      <p className="font-bold text-3xl text-green-500">hello</p>
+    <main className="h-screen">
+      <div className="mt-2 mb-7 px-6">
+        <div className="flex justify-between items-center">
+          <h1 className="text-white text-2xl font-semibold">New Songs</h1>
+        </div>
+        <Content songs={songs} />
+      </div>
     </main>
   );
 }

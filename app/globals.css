@@ -6,8 +6,6 @@ html,
 body,
 :root {
   height: 100%;
-  background-color: black;
-  color-scheme: darkblue;
 }
 
 @layer base {
@@ -44,7 +42,7 @@ body,
   }
 
   .dark {
-    --background: 0 0% 3.9%;
+    --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
 
     --card: 0 0% 3.9%;
@@ -79,6 +77,6 @@ body,
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply dark:bg-background text-foreground;
   }
 }
