@@ -1,8 +1,7 @@
-import Sidebar from "@/components/sidebar/Sidebar";
-import { Song } from "@/types";
-import { listenNowAlbums } from "../music/data/albums";
-import ToasterProvider from "@/components/providers/toaster-provider";
 import PlayerSec from "@/components/MusicPlayer/PlayerSec";
+import ToasterProvider from "@/components/providers/toaster-provider";
+import Sidebar from "@/components/sidebar/Sidebar";
+import { listenNowAlbums } from "../music/data/albums";
 
 interface SiteLayoutProps {
   children: React.ReactNode;

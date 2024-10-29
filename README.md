@@ -2,6 +2,17 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+## Screenshots
+
+<div style="display: flex; flex-direction: 'row';">
+<img src="./screenshots/Screenshot 2023-11-08 at 20-05-15 DropBeat.png" width=30%>
+<img src="./screenshots/Screenshot 2023-11-08 at 20-23-05 DropBeat.png" width=30%>
+<img src="./screenshots/Screenshot 2023-11-08 at 20-24-34 DropBeat.png" width=30%>
+<img src="./screenshots/Screenshot 2023-11-08 at 20-26-35 DropBeat.png" width=30%>
+<img src="./screenshots/Screenshot 2023-11-08 at 20-26-53 DropBeat.png" width=30%>
+
+</div>
+
 First, run the development server:
 
 ```bash

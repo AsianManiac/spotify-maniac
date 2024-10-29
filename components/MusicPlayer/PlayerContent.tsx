@@ -124,15 +124,6 @@ const PlayerContent = ({ song, songUrl }: PlayerContentProps) => {
           </div>
         </div>
 
-        <Seekbar
-          appTime={appTime}
-          value={currentTime}
-          min={0}
-          max={duration}
-          onInput={(event: any) => setSeekTime(event.target.value)}
-          setSeekTime={setSeekTime}
-        />
-
         <div className="flex md:hidden col-auto w-full justify-end items-center space-x-4 pr-3">
           <FaBackward
             className={
@@ -205,16 +196,6 @@ const PlayerContent = ({ song, songUrl }: PlayerContentProps) => {
           </div>
         </div>
       </div>
-      {/* <Seekbar
-        value={appTime}
-        min={0}
-        max={duration}
-        onInput={(event: { target: { value: SetStateAction<number> } }) =>
-          setSeekTime(event.target.value)
-        }
-        setSeekTime={setSeekTime}
-        appTime={appTime}
-      /> */}
     </ScrollArea>
   );
 };

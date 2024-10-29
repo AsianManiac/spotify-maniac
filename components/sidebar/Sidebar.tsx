@@ -54,7 +54,7 @@ const Sidebar = ({ children, songs }: SidebarProps) => {
 
   return (
     <div
-      className={cn("flex h-full", player.activeId && "h-[calc(100%-80px)]")}
+      className={cn("flex h-[10vh]", player.activeId && "h-[calc(100%-80px)]")}
     >
       <div className="hidden md:flex flex-col gap-y-2 bg-black h-full w-[300px] p-2">
         <Box>
@@ -73,7 +73,7 @@ const Sidebar = ({ children, songs }: SidebarProps) => {
           </div>
         </Box>
       </div>
-      <main className="h-full flex-1 overflow-y-auto py-2">{children}</main>
+      <main className="h-full flex-1 py-2">{children}</main>
     </div>
   );
 };

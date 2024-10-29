@@ -18,14 +18,6 @@ const Playersec = () => {
   return (
     <div className="fixed bottom-0 bg-black w-full py-2 px-4">
       <PlayerContent key={song.id} song={song} songUrl={song.songUrl} />
-      <div className="bg-redd-300 h-20">
-        {routes.map((route, index) => (
-          <Button key={index}>
-            {/* {route.icon} */}
-            {route.label}
-          </Button>
-        ))}
-      </div>
     </div>
   );
 };
